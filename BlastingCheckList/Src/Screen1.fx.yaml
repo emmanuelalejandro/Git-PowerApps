@@ -1,0 +1,25 @@
+Screen1 As screen:
+
+    PdfViewer1 As pdfViewer:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Document: =archivopdf
+        Fill: =RGBA(0, 0, 0, 0.5)
+        Height: =1039
+        ShowControls: =true
+        Y: =96
+        ZIndex: =1
+
+    Icon11 As icon.BackArrow:
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        X: =30
+        Y: =21
+        ZIndex: =2
+
+    Icon13 As icon.Mail:
+        Icon: =Icon.Mail
+        OnSelect: =
+        X: =483
+        Y: =21
+        ZIndex: =3
+

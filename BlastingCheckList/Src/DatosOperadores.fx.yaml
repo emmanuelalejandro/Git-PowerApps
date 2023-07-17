@@ -1,0 +1,109 @@
+DatosOperadores As screen:
+
+    Rectangle1_7 As rectangle:
+        Fill: =RGBA(255, 0, 0, 1)
+        Height: =113
+        Tooltip: =""  
+        Width: =640
+        ZIndex: =1
+
+    "Gallery1_3 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        Height: =631
+        Items: =BaseOperador
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(104, Self.Height - 60)
+        Y: =147
+        ZIndex: =1
+
+        Title2_3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.NombreOperador
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle2_3 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.CargoOperador
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title2_3.Y + Title2_3.Height + 4
+            ZIndex: =2
+
+        NextArrow2_3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Navigate(EditarOperadores)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="Ver los detalles del elemento"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator2_3 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =4
+
+    Label1_7 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =28
+        Text: ="Datos Operadores"
+        Width: =560
+        X: =40
+        Y: =21
+        ZIndex: =2
+
+    Arrow1_6 As arrow.backArrow:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =71
+        OnSelect: =Navigate(PantallaPrincipal)
+        Width: =72
+        X: =24
+        Y: =21
+        ZIndex: =3
+
+    Icon2_5 As icon.AddUser:
+        Color: =RGBA(255, 0, 0, 1)
+        Height: =81
+        Icon: =Icon.Person
+        OnSelect: =Navigate(IngresarOperadores);NewForm(Form4)
+        Width: =86
+        X: =277
+        Y: =834
+        ZIndex: =4
+
+    Label2_11 As label:
+        Height: =69
+        Size: =21
+        Text: ="Agregar"
+        Width: =122
+        X: =259
+        Y: =918
+        ZIndex: =5
+

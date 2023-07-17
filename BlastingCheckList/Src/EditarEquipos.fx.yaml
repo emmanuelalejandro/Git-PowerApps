@@ -1,0 +1,202 @@
+EditarEquipos As screen:
+
+    Rectangle1_26 As rectangle:
+        Fill: =RGBA(255, 0, 0, 1)
+        Height: =113
+        Tooltip: =""  
+        Width: =640
+        ZIndex: =1
+
+    Label1_26 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =28
+        Text: ="Editar Equipo"
+        Width: =560
+        X: =40
+        Y: =21
+        ZIndex: =2
+
+    Arrow1_25 As arrow.backArrow:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =71
+        OnSelect: =Navigate(DatosEquipos)
+        Width: =72
+        X: =24
+        Y: =21
+        ZIndex: =3
+
+    Icon7_13 As icon.Check:
+        Color: =RGBA(54, 176, 75, 1)
+        Icon: =Icon.Check
+        OnSelect: =SubmitForm(Form7_1);Navigate(DatosEquipos)
+        X: =145
+        Y: =565
+        ZIndex: =5
+
+    Icon8_13 As icon.Cancel:
+        Color: =RGBA(255, 0, 0, 1)
+        Icon: =Icon.Cancel
+        OnSelect: =Navigate(DatosEquipos)
+        X: =412
+        Y: =565
+        ZIndex: =6
+
+    Form7_1 As form:
+        DataSource: =BaseEquipo
+        Height: =357
+        Item: =Gallery1_6.Selected
+        OnSuccess: =Navigate(DatosEquipos)
+        Width: =640
+        Y: =162
+        ZIndex: =7
+
+        Equipo_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Equipo"
+            Default: =ThisItem.Equipo
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@BaseEquipo],DataSourceInfo.DisplayName,"Equipo")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@BaseEquipo], DataSourceInfo.MaxLength, "Equipo")
+            Required: =true
+            Update: =DataCardValue100.Text
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+            DataCardKey106 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue100 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey106.Y + DataCardKey106.Height + 5
+                ZIndex: =2
+
+            ErrorMessage96 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue100.Y + DataCardValue100.Height
+                ZIndex: =3
+
+            StarVisible96 As label:
+                Align: =Align.Center
+                Height: =DataCardKey106.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey106.Y
+                ZIndex: =4
+
+        TAGEquipo_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="TAGEquipo"
+            Default: =ThisItem.TAGEquipo
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@BaseEquipo],DataSourceInfo.DisplayName,"TAGEquipo")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@BaseEquipo], DataSourceInfo.MaxLength, "TAGEquipo")
+            Required: =false
+            Update: =DataCardValue101.Text
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =8
+
+            DataCardKey107 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: ="TAG Equipo"
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue101 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey107.Y + DataCardKey107.Height + 5
+                ZIndex: =2
+
+            ErrorMessage97 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue101.Y + DataCardValue101.Height
+                ZIndex: =3
+
+            StarVisible97 As label:
+                Align: =Align.Center
+                Height: =DataCardKey107.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey107.Y
+                ZIndex: =4
+

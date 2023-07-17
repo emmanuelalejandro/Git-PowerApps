@@ -1,0 +1,117 @@
+{
+  "188d8b49-59b5-4633-82c1-15d37e7cf152": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://myaanalitics.sharepoint.com/sites/EnaexCerroNegro": {
+        "dataSources": {
+          "ActualExplosivo": {
+            "tableName": "b400d2df-446b-4375-81ce-b513e1bfba61"
+          },
+          "BaseLabores": {
+            "tableName": "75c847d6-c840-44ee-b60a-cf0d79e425fe"
+          },
+          "BaseMina": {
+            "tableName": "2ebccdf2-78f3-47f4-bb4a-096e270602e2"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "BaseMina",
+      "ActualExplosivo",
+      "BaseLabores",
+      "BaseEquipo",
+      "BaseJefes",
+      "BaseSupervisor",
+      "BaseOperador",
+      "BaseVoladura",
+      "BaseExplosivos",
+      "BaseAyudante",
+      "BaseTipoVoladura"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "188d8b49-59b5-4633-82c1-15d37e7cf152"
+  },
+  "7859f8bf-050b-4837-b97a-b04a9aab35eb": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://myaanalitics.sharepoint.com/sites/EnaexCerroNegro": {
+        "dataSources": {
+          "BaseAyudante": {
+            "tableName": "823de14b-6725-4279-af6d-847808f74dae"
+          },
+          "BaseExplosivos": {
+            "tableName": "c9310956-867f-4489-aacb-409ab00375b0"
+          },
+          "BaseJefes": {
+            "tableName": "380f557c-16a4-4fd1-a5c6-9660f0e05825"
+          },
+          "BaseOperador": {
+            "tableName": "fdc2ea61-7e57-4974-86b6-3b44212fb92c"
+          },
+          "BaseSupervisor": {
+            "tableName": "7340b96e-37b7-4b33-8e01-d97d53db0d38"
+          },
+          "BaseTipoVoladura": {
+            "tableName": "edea1f28-b0fc-4b88-8096-3b59f110b309"
+          },
+          "BaseVoladura": {
+            "tableName": "0cc75b0f-b2d3-46dd-896b-7fa85defb8b4"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "BaseJefes",
+      "BaseAyudante",
+      "BaseExplosivos",
+      "BaseOperador",
+      "BaseSupervisor",
+      "BaseTipoVoladura",
+      "BaseVoladura"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "7859f8bf-050b-4837-b97a-b04a9aab35eb"
+  },
+  "7aa67dd8-0b86-4575-8f41-af288d9a904d": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1636/1.0.1636.3297/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://myaanalitics.sharepoint.com/sites/EnaexCerroNegro": {
+        "dataSources": {
+          "BaseEquipo": {
+            "tableName": "5b72f790-7e6f-4662-af35-f67eb740dcc9"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "BaseEquipo"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "7aa67dd8-0b86-4575-8f41-af288d9a904d"
+  }
+}

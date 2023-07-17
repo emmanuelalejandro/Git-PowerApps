@@ -1,0 +1,203 @@
+EditarMina As screen:
+
+    Rectangle1_21 As rectangle:
+        Fill: =RGBA(255, 0, 0, 1)
+        Height: =113
+        Tooltip: =""  
+        Width: =640
+        ZIndex: =1
+
+    Label1_21 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =28
+        Text: ="Editar Mina"
+        Width: =560
+        X: =40
+        Y: =21
+        ZIndex: =2
+
+    Arrow1_20 As arrow.backArrow:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =71
+        OnSelect: =Navigate(DatosMina)
+        Width: =72
+        X: =24
+        Y: =21
+        ZIndex: =3
+
+    Icon7_8 As icon.Check:
+        Color: =RGBA(54, 176, 75, 1)
+        Icon: =Icon.Check
+        OnSelect: =SubmitForm(Form1_1);Navigate(DatosMina)
+        X: =145
+        Y: =565
+        ZIndex: =5
+
+    Icon8_8 As icon.Cancel:
+        Color: =RGBA(255, 0, 0, 1)
+        Icon: =Icon.Cancel
+        OnSelect: =Navigate(DatosMina)
+        X: =412
+        Y: =565
+        ZIndex: =6
+
+    Form1_1 As form:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DataSource: =BaseMina
+        Height: =392
+        Item: =Gallery5.Selected
+        OnSuccess: =Navigate(DatosMina)
+        Width: =640
+        Y: =118
+        ZIndex: =7
+
+        NombreMina_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="NombreMina"
+            Default: =ThisItem.NombreMina
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@BaseMina],DataSourceInfo.DisplayName,"NombreMina")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@BaseMina], DataSourceInfo.MaxLength, "NombreMina")
+            Required: =false
+            Update: =DataCardValue54.Text
+            Width: =640
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+            DataCardKey60 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue54 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey60.Y + DataCardKey60.Height + 5
+                ZIndex: =2
+
+            ErrorMessage50 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue54.Y + DataCardValue54.Height
+                ZIndex: =3
+
+            StarVisible50 As label:
+                Align: =Align.Center
+                Height: =DataCardKey60.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey60.Y
+                ZIndex: =4
+
+        DescripcionMina_DataCard2 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="DescripcionMina"
+            Default: =ThisItem.DescripcionMina
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@BaseMina],DataSourceInfo.DisplayName,"DescripcionMina")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@BaseMina], DataSourceInfo.MaxLength, "DescripcionMina")
+            Required: =false
+            Update: =DataCardValue55.Text
+            Width: =640
+            X: =0
+            Y: =1
+            ZIndex: =8
+
+            DataCardKey61 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue55 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Height: =70
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =21
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey61.Y + DataCardKey61.Height + 5
+                ZIndex: =2
+
+            ErrorMessage51 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =24
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue55.Y + DataCardValue55.Height
+                ZIndex: =3
+
+            StarVisible51 As label:
+                Align: =Align.Center
+                Height: =DataCardKey61.Height
+                Size: =21
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey61.Y
+                ZIndex: =4
+

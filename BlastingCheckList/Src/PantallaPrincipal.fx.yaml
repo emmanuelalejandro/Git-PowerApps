@@ -1,0 +1,214 @@
+PantallaPrincipal As screen:
+
+    Rectangle1 As rectangle:
+        Fill: =RGBA(255, 0, 0, 1)
+        Height: =113
+        Tooltip: =""  
+        Width: =640
+        ZIndex: =1
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =70
+        Size: =28
+        Text: ="Registro Voladuras"
+        Width: =560
+        X: =51
+        Y: =21
+        ZIndex: =3
+
+    Icon2 As icon.AddUser:
+        Color: =RGBA(255, 0, 0, 1)
+        Height: =81
+        Icon: =Icon.AddUser
+        OnSelect: =Navigate(DatosJefe)
+        Width: =86
+        X: =74
+        Y: =390
+        ZIndex: =5
+
+    Icon3 As icon.AddDocument:
+        Color: =RGBA(255, 0, 0, 1)
+        Height: =81
+        Icon: =Icon.AddDocument
+        OnSelect: =Navigate(DatosMina)
+        Width: =86
+        X: =264
+        Y: =596
+        ZIndex: =6
+
+    Label2 As label:
+        Height: =65
+        Size: =21
+        Text: ="Jefe"
+        Width: =85
+        X: =75
+        Y: =474
+        ZIndex: =7
+
+    Label2_1 As label:
+        Height: =52
+        Size: =21
+        Text: ="Explosivo"
+        Width: =152
+        X: =446
+        Y: =902
+        ZIndex: =8
+
+    Icon2_1 As icon.AddUser:
+        Color: =RGBA(255, 0, 0, 1)
+        Height: =81
+        Icon: =Icon.AddUser
+        OnSelect: =Navigate(DatosSupervisor)
+        Width: =86
+        X: =267
+        Y: =390
+        ZIndex: =9
+
+    Label2_2 As label:
+        Height: =65
+        Size: =21
+        Text: ="Supervisor"
+        Width: =160
+        X: =234
+        Y: =474
+        ZIndex: =10
+
+    Star1 As star.star8:
+        Fill: =RGBA(255, 0, 0, 1)
+        Height: =81
+        OnSelect: =Navigate(DatosExplosivos)
+        Width: =86
+        X: =464
+        Y: =807
+        ZIndex: =11
+
+    Icon4 As icon.People:
+        Color: =RGBA(255, 0, 0, 1)
+        Height: =81
+        Icon: =Icon.People
+        OnSelect: =Navigate(DatosOperadores)
+        Width: =86
+        X: =474
+        Y: =390
+        ZIndex: =12
+
+    Label2_3 As label:
+        Height: =65
+        Size: =21
+        Text: ="Operador"
+        Width: =160
+        X: =440
+        Y: =474
+        ZIndex: =13
+
+    Icon4_1 As icon.People:
+        Color: =RGBA(255, 0, 0, 1)
+        Height: =81
+        Icon: =Icon.People
+        OnSelect: =Navigate(DatosAyudantes)
+        Width: =86
+        X: =63
+        Y: =596
+        ZIndex: =14
+
+    Label2_4 As label:
+        Height: =65
+        Size: =21
+        Text: ="Ayudante"
+        Width: =160
+        X: =40
+        Y: =695
+        ZIndex: =15
+
+    Label2_5 As label:
+        Height: =65
+        Size: =21
+        Text: ="Mina"
+        Width: =160
+        X: =264
+        Y: =695
+        ZIndex: =17
+
+    Icon5 As icon.Vehicles:
+        Color: =RGBA(255, 0, 0, 1)
+        Height: =81
+        Icon: =Icon.Transportation
+        OnSelect: =Navigate(DatosEquipos)
+        Width: =86
+        X: =259
+        Y: =807
+        ZIndex: =18
+
+    Icon6 As icon.Note:
+        Color: =RGBA(255, 0, 0, 1)
+        Height: =81
+        Icon: =Icon.Note
+        OnSelect: =Navigate(DatosTareas)
+        Width: =86
+        X: =469
+        Y: =596
+        ZIndex: =19
+
+    Label2_6 As label:
+        Height: =65
+        Size: =21
+        Text: ="Tarea"
+        Width: =100
+        X: =460
+        Y: =695
+        ZIndex: =20
+
+    Label2_7 As label:
+        Height: =52
+        Size: =21
+        Text: ="Equipos"
+        Width: =152
+        X: =246
+        Y: =902
+        ZIndex: =21
+
+    Button2 As button:
+        Fill: =RGBA(255, 0, 0, 1)
+        Height: =99
+        OnSelect: =Navigate(RegistroVoladura);NewForm(Form9)
+        Size: =24
+        Text: ="Nuevo Registro"
+        Width: =231
+        X: =43
+        Y: =181
+        ZIndex: =22
+
+    Button2_1 As button:
+        Fill: =RGBA(255, 0, 0, 1)
+        Height: =99
+        OnSelect: =Navigate(ConsultaRegistros)
+        Size: =24
+        Text: ="Consultar Registros"
+        Width: =231
+        X: =346
+        Y: =181
+        ZIndex: =23
+
+    Icon5_1 As icon.Vehicles:
+        Color: =RGBA(255, 0, 0, 1)
+        Height: =81
+        Icon: =Icon.Location
+        OnSelect: =Navigate(DatosLabor)
+        Width: =86
+        X: =63
+        Y: =807
+        ZIndex: =24
+
+    Label2_16 As label:
+        Height: =52
+        Size: =21
+        Text: ="Labor"
+        Width: =152
+        X: =63
+        Y: =902
+        ZIndex: =25
+
