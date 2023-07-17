@@ -1,0 +1,152 @@
+Home As screen:
+
+    Rectangle1 As rectangle:
+        Width: =1366
+        ZIndex: =1
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+        Height: =514
+        Items: =BaseGeneral
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(168, Self.Height - 60)
+        Width: =775
+        X: =542
+        Y: =228
+        ZIndex: =1
+
+        Title7 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Nombre Capacitación'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle7 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Fecha Capacitación'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title7.Y + Title7.Height + 2
+            ZIndex: =2
+
+        Body2 As label:
+            Height: =Self.Size * 4
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Instructor
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Subtitle7.Y + Subtitle7.Height + 4
+            ZIndex: =3
+
+        NextArrow7 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="Ver los detalles del elemento"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator7 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+    Image1 As image:
+        Height: =89
+        Image: =LogoConsultora
+        Width: =281
+        Y: =679
+        ZIndex: =2
+
+    Label1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =59
+        Size: =30
+        Text: ="Registro de Capacitaciones"
+        Width: =735
+        X: =422
+        Y: =20
+        ZIndex: =3
+
+    Button1 As button:
+        Height: =96
+        OnSelect: =Navigate(Empleados)
+        Size: =20
+        Text: ="Empleados"
+        Width: =227
+        X: =116
+        Y: =283
+        ZIndex: =4
+
+    Button1_1 As button:
+        Height: =96
+        OnSelect: =Navigate(Capacitaciones);Transition.Pop
+        Size: =20
+        Text: ="Capacitaciones"
+        Width: =227
+        X: =116
+        Y: =416
+        ZIndex: =5
+
+    Button1_2 As button:
+        Height: =96
+        Size: =20
+        Text: ="Consulta"
+        Width: =227
+        X: =116
+        Y: =547
+        ZIndex: =6
+
+    TextInput1 As text:
+        Default: ="Entrada de texto"
+        Height: =58
+        X: =664
+        Y: =135
+        ZIndex: =8
+
+    Button2 As button:
+        Height: =58
+        Text: ="Buscar"
+        X: =1042
+        Y: =135
+        ZIndex: =9
+
+    Button1_3 As button:
+        Height: =96
+        OnSelect: =Navigate(RegistroCapacitación);NewForm(Form4)
+        Size: =20
+        Text: ="Registrar Capacitación"
+        Width: =227
+        X: =116
+        Y: =150
+        ZIndex: =10
+

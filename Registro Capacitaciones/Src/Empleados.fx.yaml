@@ -1,0 +1,165 @@
+Empleados As screen:
+
+    Rectangle1_1 As rectangle:
+        Width: =1366
+        ZIndex: =1
+
+    "Gallery1_1 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver4.0'":
+        Height: =514
+        Items: |-
+            =Filter(
+                BaseEmpleados,
+                StartsWith(
+                    'Nombre y Apellido',
+                    SearchInput.Text
+                ) || StartsWith(
+                    DNI,
+                    Value(SearchInput.Text)
+                )
+            )
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =Min(168, Self.Height - 60)
+        Width: =830
+        X: =464
+        Y: =165
+        ZIndex: =1
+
+        Image5 As image:
+            Height: =128
+            Image: =ThisItem.Imagen
+            OnSelect: =Select(Parent)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Nombre y Apellido'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image5.Width - 104
+            X: =Image5.X + Image5.Width + 16
+            Y: =16
+            ZIndex: =2
+
+        Subtitle2 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.DNI
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title2.Width
+            X: =Title2.X
+            Y: =67
+            ZIndex: =3
+
+        Body1 As label:
+            Height: =46
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Gerencia
+            VerticalAlign: =VerticalAlign.Top
+            Width: =190
+            X: =Subtitle2.X
+            Y: =116
+            ZIndex: =4
+
+        NextArrow2 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Navigate(EditarEmpleado)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="Ver los detalles del elemento"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =5
+
+        Separator2 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =6
+
+        Body1_1 As label:
+            Height: =46
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Área
+            VerticalAlign: =VerticalAlign.Top
+            Width: =190
+            X: =392
+            Y: =110
+            ZIndex: =7
+
+    Image1_1 As image:
+        Height: =89
+        Image: =LogoConsultora
+        Width: =281
+        Y: =679
+        ZIndex: =2
+
+    Label1_1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =59
+        Size: =30
+        Text: ="Registro de Empleados"
+        Width: =735
+        X: =422
+        Y: =20
+        ZIndex: =3
+
+    SearchInput As text:
+        Default: =""
+        Height: =58
+        X: =68
+        Y: =229
+        ZIndex: =8
+
+    Button3 As button:
+        Height: =89
+        OnSelect: =Navigate(IngresarEmpleado);NewForm(Form1)
+        Text: ="Nuevo Empleado"
+        Width: =187
+        X: =135
+        Y: =492
+        ZIndex: =10
+
+    Icon1 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Home)
+        X: =20
+        Y: =17
+        ZIndex: =11
+
+    Label2 As label:
+        Height: =47
+        Size: =20
+        Text: ="Buscar Empleado"
+        Width: =291
+        X: =107
+        Y: =167
+        ZIndex: =12
+
