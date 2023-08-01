@@ -1,0 +1,47 @@
+{
+  "6ad69f74-44f4-4480-84be-608bcfd937cb": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://panamericansilvercorp-my.sharepoint.com/personal/emmanuel_alvarez_ar_panamericansilver_com": {
+        "dataSources": {
+          "BaseCálculoGeom_Ja": {
+            "tableName": "a4b499b9-4a67-4d75-a47b-02ce8580b14d"
+          },
+          "BaseCálculoGeom_Jn": {
+            "tableName": "a5778b03-a3a2-42c3-992d-a3945b62c749"
+          },
+          "BaseCálculoGeom_Jr": {
+            "tableName": "6b585547-57cb-422a-87d5-94da00e54ae5"
+          },
+          "BaseCálculoGeom_Jw": {
+            "tableName": "850eb7a9-8a00-4385-b5ba-4ceaea7396f0"
+          },
+          "BaseCálculoGeom_SRF": {
+            "tableName": "8f1f8b57-77c4-461b-8a45-b85deb92828d"
+          },
+          "BaseQ": {
+            "tableName": "08c38d38-9a8b-4243-8fd5-ac31d5aa4bde"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "BaseCálculoGeom_Jn",
+      "BaseQ",
+      "BaseCálculoGeom_Ja",
+      "BaseCálculoGeom_Jr",
+      "BaseCálculoGeom_SRF",
+      "BaseCálculoGeom_Jw"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "6ad69f74-44f4-4480-84be-608bcfd937cb"
+  }
+}

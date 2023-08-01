@@ -1,0 +1,461 @@
+Registro As screen:
+    Fill: =RGBA(232, 232, 232, 1)
+
+    Icon2 As icon.BackArrow:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 51, 102, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =62
+        Icon: =Icon.BackArrow
+        OnSelect: =Back()
+        X: =30
+        Y: =31
+        ZIndex: =2
+
+    Dropdown1 As dropdown:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        ChevronBackground: =RGBA(0, 51, 102, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Items: =Distinct(ColJn,Title)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 89, 178, 1)
+        SelectionFill: =RGBA(0, 51, 102, 1)
+        Size: =18
+        Width: =403
+        X: =23
+        Y: =206
+        ZIndex: =3
+
+    Label1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =42
+        Size: =18
+        Text: ="Jn - Índice de fracturamiento"
+        Width: =560
+        X: =23
+        Y: =147
+        ZIndex: =6
+
+    Label1_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =45
+        Size: =18
+        Text: ="Ja - Índice de alteración"
+        Width: =560
+        X: =23
+        Y: =345
+        ZIndex: =8
+
+    Jn As dropdown:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        ChevronBackground: =RGBA(0, 51, 102, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Items: =Filter(ColJn, Title = Dropdown1.Selected.Value)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 89, 178, 1)
+        SelectionFill: =RGBA(0, 51, 102, 1)
+        Size: =16
+        Width: =146
+        X: =470
+        Y: =206
+        ZIndex: =9
+
+    Checkbox1 As checkbox:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        CheckboxBorderColor: =RGBA(0, 89, 178, 1)
+        CheckboxSize: =60
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =62
+        HoverColor: =RGBA(0, 89, 178, 1)
+        Size: =16
+        Text: ="Portales"
+        Width: =155
+        X: =343
+        Y: =266
+        ZIndex: =10
+
+    Checkbox2 As checkbox:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        CheckboxBorderColor: =RGBA(0, 89, 178, 1)
+        CheckboxSize: =60
+        Color: =RGBA(0, 0, 0, 1)
+        Height: =55
+        HoverColor: =RGBA(0, 89, 178, 1)
+        Size: =16
+        Text: ="Cruces"
+        Width: =135
+        X: =94
+        Y: =270
+        ZIndex: =11
+
+    Dropdown1_1 As dropdown:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        ChevronBackground: =RGBA(0, 51, 102, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Items: =Distinct(ColJa,Title)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 89, 178, 1)
+        SelectionFill: =RGBA(0, 51, 102, 1)
+        Size: =16
+        Width: =403
+        X: =23
+        Y: =417
+        ZIndex: =12
+
+    Ja As dropdown:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        ChevronBackground: =RGBA(0, 51, 102, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Items: =Filter(ColJa, Title = Dropdown1_1.Selected.Value)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 89, 178, 1)
+        SelectionFill: =RGBA(0, 51, 102, 1)
+        Size: =16
+        Width: =146
+        X: =470
+        Y: =417
+        ZIndex: =14
+
+    Label1_2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =50
+        Size: =18
+        Text: ="Jr - Índice de rugosidad"
+        Width: =560
+        X: =23
+        Y: =496
+        ZIndex: =16
+
+    Dropdown1_2 As dropdown:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        ChevronBackground: =RGBA(0, 51, 102, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Items: =Distinct(ColJr,Title)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 89, 178, 1)
+        SelectionFill: =RGBA(0, 51, 102, 1)
+        Size: =16
+        Width: =403
+        X: =23
+        Y: =569
+        ZIndex: =17
+
+    Jr As dropdown:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        ChevronBackground: =RGBA(0, 51, 102, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Items: =Filter(ColJr, Title = Dropdown1_2.Selected.Value)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 89, 178, 1)
+        SelectionFill: =RGBA(0, 51, 102, 1)
+        Size: =16
+        Width: =146
+        X: =470
+        Y: =569
+        ZIndex: =19
+
+    Label1_3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =50
+        Size: =18
+        Text: ="Jw - Condicion de Agua"
+        Width: =560
+        X: =23
+        Y: =659
+        ZIndex: =21
+
+    Dropdown1_3 As dropdown:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        ChevronBackground: =RGBA(0, 51, 102, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Items: =Distinct(ColJw,Title)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 89, 178, 1)
+        SelectionFill: =RGBA(0, 51, 102, 1)
+        Size: =16
+        Width: =403
+        X: =23
+        Y: =734
+        ZIndex: =22
+
+    Jw As dropdown:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        ChevronBackground: =RGBA(0, 51, 102, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Items: =Filter(ColJw, Title = Dropdown1_3.Selected.Value)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 89, 178, 1)
+        SelectionFill: =RGBA(0, 51, 102, 1)
+        Size: =16
+        Width: =146
+        X: =470
+        Y: =734
+        ZIndex: =23
+
+    Label1_4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =50
+        Size: =18
+        Text: ="SRF - Condición de Esfuerzos"
+        Width: =560
+        X: =34
+        Y: =826
+        ZIndex: =24
+
+    Dropdown1_4 As dropdown:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        ChevronBackground: =RGBA(0, 51, 102, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Items: =Distinct(ColSRF,Title)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 89, 178, 1)
+        SelectionFill: =RGBA(0, 51, 102, 1)
+        Size: =16
+        Width: =403
+        X: =23
+        Y: =895
+        ZIndex: =25
+
+    SRF As dropdown:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        ChevronBackground: =RGBA(0, 51, 102, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Items: =Filter(ColSRF, Title = Dropdown1_4.Selected.Value)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(0, 89, 178, 1)
+        SelectionFill: =RGBA(0, 51, 102, 1)
+        Size: =16
+        Width: =146
+        X: =470
+        Y: =895
+        ZIndex: =26
+
+    Label1_5 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =42
+        Size: =18
+        Text: ="RQD - Rock Quality Designation"
+        Width: =560
+        X: =59
+        Y: =20
+        ZIndex: =27
+
+    RQD As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: ="0"
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Format: =TextFormat.Number
+        Height: =43
+        HoverBorderColor: =RGBA(0, 89, 178, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(153, 205, 255, 1)
+        Size: =21
+        Width: =152
+        X: =256
+        Y: =79
+        ZIndex: =28
+
+    Button1 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 51, 102, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =77
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(0, 51, 102, 1), -20%)
+        OnSelect: |-
+            =UpdateContext({Resultado: (RQD.Text*Jr.Selected.Valor_Jr*Jw.Selected.Valor_Jw)/(Jn.Selected.Valor*Ja.Selected.Valor_Ja*SRF.Selected.Valor_SRF)})
+        Size: =24
+        Text: ="Calcular"
+        Width: =152
+        X: =34
+        Y: =996
+        ZIndex: =29
+
+    CalculoQ As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(152, 208, 70, 1)
+        Fill: =RGBA(209, 232, 178, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =77
+        Size: =25
+        Text: =Resultado
+        Width: =172
+        X: =254
+        Y: =996
+        ZIndex: =30
+
+    Icon6 As icon.Send:
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(54, 176, 75, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =77
+        Icon: =Icon.Check
+        OnSelect: |-
+            =If(Connection.Connected,
+            Patch(BaseQ, Defaults(BaseQ), 
+            {
+                Fecha: Fecha.SelectedDate,
+                Mapeado: Usuario.Text,
+                Nivel: Nivel.Text,
+                Frente: Frente.Text,
+                RQD: Value(RQD.Text),
+                Jn: Jn.Selected.Valor,
+                Jr: Jr.Selected.Valor_Jr,
+                Ja: Ja.Selected.Valor_Ja,
+                Jw: Jw.Selected.Valor_Jw,
+                SRF: SRF.Selected.Valor_SRF,
+                Q: Value(CalculoQ.Text),
+                Observaciones:Observaciones.Text,
+                Title: Mina.Selected.Value,
+                Imagen:Imagen
+            }),
+            Collect(
+                Colbasegral,
+                {
+                    ColFecha: Fecha.SelectedDate,
+                    ColMina: Mina.Selected,
+                    ColNivel: Nivel.Text,
+                    ColFrente: Frente.Text,
+                    ColObs: Observaciones.Text,
+                    ColRQD: RQD.Text,
+                    ColJn: Jn.Selected,
+                    Coljr: Jr.Selected,
+                    ColJa: Ja.Selected,
+                    ColJw: Jw.Selected,
+                    ColSRF: SRF.Selected,
+                    ColQ: CalculoQ.Text,
+                    ColImagen: Imagen,
+                    ColUsuario: Usuario.Text
+                }
+            ));
+            SaveData(
+                Colbasegral,
+                "localDataGral"
+            );
+            Navigate(Home)
+        Width: =89
+        X: =505
+        Y: =996
+        ZIndex: =31
+

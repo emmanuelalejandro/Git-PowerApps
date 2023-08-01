@@ -1,0 +1,57 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =LoadData(Colbasegral,"localDataGral", true);
+        LoadData(ColJn,"localData", true);
+        LoadData(ColJa,"localData1", true);
+        LoadData(ColJr,"localData2", true);
+        LoadData(ColJw,"localData3", true);
+        LoadData(ColSRF,"localData4", true);
+        Collect(
+            ColJn,
+            Filter(BaseCálculoGeom_Jn,Title,Valor)
+            );
+        SaveData(
+            ColJn,
+            "localData"
+        );
+        Collect(
+            ColJa,
+            Filter(BaseCálculoGeom_Ja,Title,Valor_Ja)
+            );
+        SaveData(
+            ColJa,
+            "localData1"
+        );
+        Collect(
+            ColJr,
+            Filter(BaseCálculoGeom_Jr,Title,Valor_Jr)
+            );
+        SaveData(
+            ColJr,
+            "localData2"
+        );
+        Collect(
+            ColJw,
+            Filter(BaseCálculoGeom_Jw,Title,Valor_Jw)
+            );
+        SaveData(
+            ColJw,
+            "localData3"
+        );
+        Collect(
+            ColSRF,
+            Filter(BaseCálculoGeom_SRF,Title,Valor_SRF)
+            );
+        SaveData(
+            ColSRF,
+            "localData4"
+        )
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
