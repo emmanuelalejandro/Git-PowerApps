@@ -6,7 +6,7 @@ IngresarEmpleado As screen:
 
     Image1_2 As image:
         Height: =89
-        Image: =LogoConsultora
+        Image: ='Logo chico'
         Width: =281
         X: =1085
         Y: =679

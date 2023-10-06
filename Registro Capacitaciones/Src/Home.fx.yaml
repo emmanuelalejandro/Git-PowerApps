@@ -81,10 +81,10 @@ Home As screen:
             ZIndex: =5
 
     Image1 As image:
-        Height: =89
-        Image: =LogoConsultora
-        Width: =281
-        Y: =679
+        Height: =94
+        Image: ='Logo chico'
+        Width: =343
+        Y: =674
         ZIndex: =2
 
     Label1 As label:

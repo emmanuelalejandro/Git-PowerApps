@@ -115,7 +115,7 @@ Empleados As screen:
 
     Image1_1 As image:
         Height: =89
-        Image: =LogoConsultora
+        Image: ='Logo chico'
         Width: =281
         Y: =679
         ZIndex: =2
