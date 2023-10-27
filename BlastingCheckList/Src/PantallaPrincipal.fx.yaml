@@ -21,7 +21,7 @@ PantallaPrincipal As screen:
         ZIndex: =3
 
     Icon2 As icon.AddUser:
-        Color: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(136, 160, 209, 1)
         Height: =81
         Icon: =Icon.AddUser
         OnSelect: =Navigate(DatosJefe)
@@ -31,7 +31,7 @@ PantallaPrincipal As screen:
         ZIndex: =5
 
     Icon3 As icon.AddDocument:
-        Color: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(136, 160, 209, 1)
         Height: =81
         Icon: =Icon.AddDocument
         OnSelect: =Navigate(DatosMina)
@@ -59,7 +59,7 @@ PantallaPrincipal As screen:
         ZIndex: =8
 
     Icon2_1 As icon.AddUser:
-        Color: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(136, 160, 209, 1)
         Height: =81
         Icon: =Icon.AddUser
         OnSelect: =Navigate(DatosSupervisor)
@@ -78,7 +78,7 @@ PantallaPrincipal As screen:
         ZIndex: =10
 
     Star1 As star.star8:
-        Fill: =RGBA(255, 0, 0, 1)
+        Fill: =RGBA(136, 160, 209, 1)
         Height: =81
         OnSelect: =Navigate(DatosExplosivos)
         Width: =86
@@ -87,7 +87,7 @@ PantallaPrincipal As screen:
         ZIndex: =11
 
     Icon4 As icon.People:
-        Color: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(136, 160, 209, 1)
         Height: =81
         Icon: =Icon.People
         OnSelect: =Navigate(DatosOperadores)
@@ -106,7 +106,7 @@ PantallaPrincipal As screen:
         ZIndex: =13
 
     Icon4_1 As icon.People:
-        Color: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(136, 160, 209, 1)
         Height: =81
         Icon: =Icon.People
         OnSelect: =Navigate(DatosAyudantes)
@@ -134,7 +134,7 @@ PantallaPrincipal As screen:
         ZIndex: =17
 
     Icon5 As icon.Vehicles:
-        Color: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(136, 160, 209, 1)
         Height: =81
         Icon: =Icon.Transportation
         OnSelect: =Navigate(DatosEquipos)
@@ -144,7 +144,7 @@ PantallaPrincipal As screen:
         ZIndex: =18
 
     Icon6 As icon.Note:
-        Color: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(136, 160, 209, 1)
         Height: =81
         Icon: =Icon.Note
         OnSelect: =Navigate(DatosTareas)
@@ -172,7 +172,7 @@ PantallaPrincipal As screen:
         ZIndex: =21
 
     Button2 As button:
-        Fill: =RGBA(255, 0, 0, 1)
+        Fill: =RGBA(0, 13, 75, 1)
         Height: =99
         OnSelect: =Navigate(RegistroVoladura);NewForm(Form9)
         Size: =24
@@ -183,7 +183,7 @@ PantallaPrincipal As screen:
         ZIndex: =22
 
     Button2_1 As button:
-        Fill: =RGBA(255, 0, 0, 1)
+        Fill: =RGBA(0, 13, 75, 1)
         Height: =99
         OnSelect: =Navigate(ConsultaRegistros)
         Size: =24
@@ -194,7 +194,7 @@ PantallaPrincipal As screen:
         ZIndex: =23
 
     Icon5_1 As icon.Vehicles:
-        Color: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(136, 160, 209, 1)
         Height: =81
         Icon: =Icon.Location
         OnSelect: =Navigate(DatosLabor)
