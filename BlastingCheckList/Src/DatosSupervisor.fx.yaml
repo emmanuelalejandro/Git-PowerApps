@@ -1,7 +1,7 @@
 DatosSupervisor As screen:
 
     Rectangle1_5 As rectangle:
-        Fill: =RGBA(255, 0, 0, 1)
+        Fill: =RGBA(0, 13, 75, 1)
         Height: =113
         Tooltip: =""  
         Width: =640
@@ -91,7 +91,7 @@ DatosSupervisor As screen:
         ZIndex: =3
 
     Icon2_4 As icon.AddUser:
-        Color: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(136, 160, 209, 1)
         Height: =81
         Icon: =Icon.Person
         OnSelect: =Navigate(IngresarSupervisor);NewForm(Form3)

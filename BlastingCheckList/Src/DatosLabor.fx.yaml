@@ -1,7 +1,7 @@
 DatosLabor As screen:
 
     Rectangle1_28 As rectangle:
-        Fill: =RGBA(255, 0, 0, 1)
+        Fill: =RGBA(0, 13, 75, 1)
         Height: =113
         Tooltip: =""  
         Width: =640
@@ -76,7 +76,7 @@ DatosLabor As screen:
         ZIndex: =3
 
     Icon2_10 As icon.AddUser:
-        Color: =RGBA(255, 0, 0, 1)
+        Color: =RGBA(136, 160, 209, 1)
         Height: =81
         Icon: =Icon.AddDocument
         OnSelect: =Navigate(IngresarLabor);NewForm(Form6_1)
