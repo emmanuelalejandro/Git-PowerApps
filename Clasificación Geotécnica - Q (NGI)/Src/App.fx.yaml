@@ -47,6 +47,7 @@ App As appinfo:
             ColSRF,
             "localData4"
         )
+    Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false
